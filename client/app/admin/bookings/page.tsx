@@ -16,6 +16,8 @@ async function fetchBookings(): Promise<Booking[]> {
   return res.data;
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminBookingsPage() {
   const bookings = await fetchBookings();
 
